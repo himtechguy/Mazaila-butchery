@@ -1,0 +1,10 @@
+function toggleMenu() {
+  const nav = document.getElementById("navMenu");
+  nav.classList.toggle("active");
+}
+
+document.querySelectorAll("#navMenu a").forEach(link => {
+  link.addEventListener("click", () => {
+    document.getElementById("navMenu").classList.remove("active");
+  });
+});
